@@ -12,3 +12,12 @@ body{
   border-radius: 0;
   border: none;
 }
+
+.card{
+  transition: 0.5s;
+}
+
+.card:hover{
+  scale: 1.03;
+  cursor: pointer;
+}
