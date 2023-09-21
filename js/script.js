@@ -32,6 +32,19 @@ const team = [
   },
 ];
 
-// - console.log() dei dati per ogni membro
-// - stampare nel DOM
+for (const member of team) {
+  // - console.log() dei dati per ogni membro
+  console.log("Nome: ",member.nome);
+  console.log("Ruolo: ",member.ruolo);
+  console.log("Foto: ",member.foto);
+
+  // - stampare nel DOM
+  const output = document.querySelector(".container");
+  output.innerHTML += `
+  <p>Nome: ${member.nome}</p>
+  <p>Ruolo: ${member.ruolo}</p>
+  <p>Foto: ${member.foto}</p>
+  `;
+}
+
 // - creo la mia card, con immagine e il resto dei dati
