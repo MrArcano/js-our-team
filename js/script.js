@@ -40,11 +40,14 @@ for (const member of team) {
 
   // - stampare nel DOM
   const output = document.querySelector(".container");
+  // - creo la mia card, con immagine e il resto dei dati
   output.innerHTML += `
-  <p>Nome: ${member.nome}</p>
-  <p>Ruolo: ${member.ruolo}</p>
-  <p>Foto: ${member.foto}</p>
+  <div class="card text-center" style="width: 18rem;">
+    <img src="img/${member.foto}" class="card-img-top" alt="${member.foto}">
+    <div class="card-body">
+      <h5 class="card-title">${member.nome}</h5>
+      <p class="card-text">${member.ruolo}</p>
+    </div>
+  </div>
   `;
 }
-
-// - creo la mia card, con immagine e il resto dei dati
