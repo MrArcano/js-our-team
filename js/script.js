@@ -42,8 +42,8 @@ for (const member of team) {
   const output = document.querySelector(".container");
   // - creo la mia card, con immagine e il resto dei dati
   output.innerHTML += `
-  <div class="card text-center" style="width: 18rem;">
-    <img src="img/${member.foto}" class="card-img-top" alt="${member.foto}">
+  <div class="card text-center shadow m-3 b-radius-0" style="width: 18rem;">
+    <img src="img/${member.foto}" class="card-img-top b-radius-0" alt="${member.foto}">
     <div class="card-body">
       <h5 class="card-title">${member.nome}</h5>
       <p class="card-text">${member.ruolo}</p>

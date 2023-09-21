@@ -1,0 +1,14 @@
+body{
+  font-family: 'Playfair Display', serif;
+  color: #414141 !important;
+  background-color: #f5f5f1;
+}
+
+.w-1000px{
+  max-width: 1000px;
+}
+
+.b-radius-0{
+  border-radius: 0;
+  border: none;
+}
